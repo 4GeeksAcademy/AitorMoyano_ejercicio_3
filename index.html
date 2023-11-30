@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-10 offset-md-1">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="mb-0">Payment form example</h3>
+                </div>
+                <div class="card-body">
+                    <div id="error-msg" class="alert alert-danger">some fiend are missing</div>
+                    <form method="post" action="#">
+                        <div class="row mt-4">
+                            <div class="col-sm-5 pb-3">
+                                <label for="exampleAcount">Card #</label>
+                                <input class="form-control" id="exampleAcount" placeholder="0000" type="text">
+                            </div>    
+                            <div class="col-sm-3 pb-3">
+                                <label for="exampleCtrl">CVC #</label>
+                                <input type="text" class="form-control" id="exampleCtrl" placeholder="0000">
+                            </div>    
+                            <div class="col-sm-3 pb-3">
+                                <label for="exampleAmount">Amount</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="dollar-sin"></i>
+                                    </div>
+                                    <div class="form-control" id="exampleAmount" placeholder="Amount" type="number"></div>    
+                                </div>
+                            </div>    
+                            <div class="col-sm-5 pb-3">
+                                <label for="exampleFirst">first name</label>
+                                <input class="form-control" type="text" id="exampleFirst">
+                            </div>
+                            <div class="col-md-5 pd-3">
+                                <label for="exampleLast">Last name</label>
+                                <input type="text" class="form-control" id="exampleLast">
+                            </div>
+                            <div class="col-sm-6 pd-3">
+                                <label for="exampleCity">City</label>
+                                <input type="text" class="form-control" id="exampleCity">
+                            </div>
+                            <div class="col-sm-3 pd-3">
+                                <label for="exampleState">State</label>
+                                <select class="form-control custom-select id="exampleState">
+                                <option class="text-white bg-warning">
+                                    Pick a state
+                                </option>
+                                <option>
+                                    option 1 
+                                </option>
+                                <option>
+                                    option 2
+                                </option>
+                            </select>
+                            </div>
+                            <div class="col-md-3 pd-3"> 
+                            <label for="examplePostal">Postal Code</label>
+                            <input type="text" class="form-control" id="examplePostal">
+                        </div>
+                        <div class="col-md-6 pb-3">
+                            <p for="exampleAccount">We accept:</p>
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-secondary">
+                                    <input autocomplete="off" checked id="blue" name="options" type="radio">
+                                    <i>1</i>
+                                </label> 
+                                <label class="btn btn-secondary">
+                                    <input autocomplete="off" id="red" name="options" type="radio">
+                                    <i>2</i>
+                                </label> 
+                                <label class="btn btn-secondary">
+                                    <input autocomplete="off" id="green" name="options" type="radio">
+                                    <i>3</i>
+                                </label> 
+                                <label class="btn btn-secondary">
+                                    <input autocomplete="off" id="yellow" name="options" type="radio">
+                                    <i>4</i>
+                                </label> 
+                            </div>
+                            
+                        </div>
+                            <div class=" col-md-3 pd-3">
+                                <label for="exmapleMessage">Message</label>
+                                <textarea type="text" class="form-control" id="exmapleMessage" rows="3"></textarea>
+                            </div>
+                    </form>
+                </div>
+                <div class="mt-4">
+                    <div class="card-footer">
+                    <button class="btn btn-secondary" type="reset">Cancel</button>
+                    <button class="btn btn-primary" type="button">Send</button>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
